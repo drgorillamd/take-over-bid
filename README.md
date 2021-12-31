@@ -9,6 +9,7 @@ Implementation of mandatory/voluntary take-over bidding in an ERC20 token
 - The minimum bid amount is the uniswap 24h twap * 1.10. In case of an automatic take-over bid, the amount might then be at a discount or at a premium to the current Uniswap price. This is particularly true in more volatile assets.
 - If at the end of the take-over bid, the bidder hold more than 90% of the total supply, an automatic bidding reopening is conducted (at the same price and duration as the initial one), in order for more participant to enter the process.
 - The Generic Penalty is freezing of transfers and loss of the corresponding voting power.
+- A cycle is defined as
 -
 
 ## Implementation details
